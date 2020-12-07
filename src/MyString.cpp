@@ -7,8 +7,7 @@
 MyString::MyString(const char *new_str) {
   if (new_str == nullptr) {
     len = 0;
-    str = new char[1];
-    snprintf(str, sizeof(str), "%s", "\0");
+    str = nullptr;
   } else {
     len = strlen(new_str);
     str = new char[len + 1];
