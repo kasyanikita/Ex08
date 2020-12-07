@@ -14,7 +14,7 @@ int main() {
   std::cout << (a <= c) << '\n';
   std::cout << (a >= c) << '\n';
   std::cout << (a == c) << '\n';
-  MyString d ("Hello ");
+  MyString d("Hello ");
   c = !d + !b;
   std::cout << c << '\n';
   MyString e("lo");
