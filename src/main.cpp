@@ -6,7 +6,7 @@
 int main() {
   MyString a("abba");
   MyString c = a;
-  MyString b = "baba";
+  MyString b("baba");
   std::cout << c << '\n';
   std::cout << (a > b) << '\n';
   std::cout << (a < b) << '\n';
@@ -14,11 +14,11 @@ int main() {
   std::cout << (a <= c) << '\n';
   std::cout << (a >= c) << '\n';
   std::cout << (a == c) << '\n';
-  a = "Hello ";
-  c = !a + !b;
+  MyString d ("Hello ");
+  c = !d + !b;
   std::cout << c << '\n';
-  b = "lo";
-  c = a - b;
+  MyString e("lo");
+  c = d - e;
   std::cout << c << '\n';
   c = a * 5;
   std::cout << c << '\n';

@@ -1,7 +1,7 @@
 // Copyright 2020 Kasyanov
 
-#ifndef _INCLUDE_MYSTRING_H_
-#define _INCLUDE_MYSTRING_H_
+#ifndef INCLUDE_MYSTRING_H_
+#define INCLUDE_MYSTRING_H_
 
 #include <iostream>
 #include <cstring>
@@ -42,4 +42,4 @@ class MyString {
 
 char *AddCharResize(char *, char);
 
-#endif  // _INCLUDE_MYSTRING_H_
+#endif  // INCLUDE_MYSTRING_H_

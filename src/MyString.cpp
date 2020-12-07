@@ -1,6 +1,7 @@
 // Copyright 2020 Kasyanov
 
 #include <string>
+#include <cstdio>
 #include "MyString.h"
 
 MyString::MyString(const char *new_str) {
@@ -11,20 +12,20 @@ MyString::MyString(const char *new_str) {
   } else {
     len = strlen(new_str);
     str = new char[len + 1];
-    strcpy(str, new_str);
+    snprintf(str, len + 1, "%s", new_str);
   }
 }
 
 MyString::MyString(std::string new_str) {
   len = new_str.size();
   str = new char[len + 1];
-  strcpy(str, new_str.c_str());
+  snprintf(str, len + 1, "%s", new_str.c_str());
 }
 
 MyString::MyString(const MyString &s) {
   len = s.len;
   str = new char[len + 1];
-  strcpy(str, s.str);
+  snprintf(str, len + 1, "%s", s.str);
 }
 
 MyString::MyString(MyString &&s) {
